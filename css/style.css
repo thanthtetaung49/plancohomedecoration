@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+:root{
+    /*hue-saturation-lightness-alpha*/
+    --primary-color: hsl(330, 87%, 17%);
+    --secondary-color: hsla(203, 100%, 13%, 0.5);
+}
+
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+header{
+    height: 100vh;
+
+    background-size: cover;
+    background: linear-gradient(30deg,rgba(0,0,0,0.5),rgba(0,0,0,0)), url("../assets/img/banner/banner2.jpg") no-repeat center;
+
+    position: relative;
+}
+
+/*Start nav bar*/
+.navbar{
+    background: linear-gradient(rgba(0,0,0,0.6),var(--secondary-color));
+    padding: 10px 30px;
+}
+
+.menuitems{
+    color: #eee;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.menuitems:hover{
+    color: #1aaee8;
+}
+
+.line-1,.line-2,.line-3{
+    width: 25px;
+    height: 3px;
+
+    margin: 6px;
+}
+/*End nav bar*/
+
+/*Start banner*/
+
+.banners{
+    width: 80%;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%,-50%);
+}
+
+.bannerheaders{
+    animation-name: bananimation;
+    animation-duration: 3s;
+}
+
+.bannerparagraphs{
+    animation-name: bananimation;
+    animation-duration: 3s;
+    animation-delay: 1s;
+
+    animation-fill-mode: backwards;
+}
+
+@keyframes bananimation {
+    0%{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+/*End banner*/

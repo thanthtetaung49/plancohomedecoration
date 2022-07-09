@@ -62,8 +62,6 @@ $(document).ready(function () {
             $(".adv-texts").removeClass("fromrights");
         }
     })
-
-
     // End Adv Section 
 })
 // End Jquery

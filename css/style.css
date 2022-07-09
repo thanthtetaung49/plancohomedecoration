@@ -108,18 +108,11 @@ header{
 /*Start aboutuss*/
 
 .aboutuss{
-    height: 100vh;
-
-    background-image: linear-gradient(
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.3)
-    ), url("../assets/img/banner/banner2.jpg");
-    background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0)), url("../assets/img/banner/banner2.jpg") no-repeat center;
     background-attachment: fixed;
 
-    position: relative
+    position: relative;
 }
 
 .aboutuss img{
@@ -399,3 +392,116 @@ ul.clientslists li:hover{
 }
 
 /* End Clients  */
+
+/* Start Request Quote */
+
+.qutoes {
+    background-color: var(--secondary-color);
+
+    padding: 30px 50px;
+    margin: -30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.qutoes .infos {
+    display: flex;
+}
+
+.qutoes .btn-calls {
+    width: 170px;
+    height: 50px;
+
+    background-color: var(--primary-color);
+
+    color: #ffffff;
+    font-size: 15px;
+    font-family: sans-serif;
+    line-height: 50px;
+
+    border-radius: 100px;
+    border: 0;
+
+    padding: 0; /* cuz of bootstrap btn effect */
+
+    transform: translate(0,-1px);
+
+    transition: box-shadow 0.3s;
+}
+
+.qutoes .btn-calls:hover {
+    transform: translate(0px);
+
+    box-shadow: -3px 3px 3px #444;
+}
+
+.phoneicons {
+    width: 30px;
+}
+
+@media (max-width: 768px) {
+    .phoneicons{
+        width: 50px;
+    }
+}
+
+/* End Request Quote */
+
+/* Start Furniture Services  */
+.furnicons img {
+    width: 70px;
+}
+
+.furnicons > div:nth-of-type(even) {
+    background-color: #f1f1f1;
+}
+/* End Furniture Services  */
+
+/* Start Contact  */
+
+.contacts {
+    background-image: url("./../assets/img/banner/banner3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.contacts .inputs {
+    background-color: transparent;
+
+    /* border: none; */
+    border-color: transparent;
+    border-bottom: 2px solid #ccc;
+    border-radius: 0;
+
+    color: #ffffff;
+
+    transition: all 0.8s;
+}
+
+.contacts .inputs:focus{
+    box-shadow: none;
+
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.submit-btns {
+    background-color: var(--primary-color);
+
+    color: #ffffff;
+
+    border: none;
+
+    transition: background-color 0.3s;
+}
+
+.submit-btns:hover {
+    background-color: var(--secondary-color);
+
+    color: #ffffff;
+}
+
+/* End Contact  */

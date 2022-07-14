@@ -1,5 +1,20 @@
 // Start Jquery
 $(document).ready(function () {
+
+    // Start Back to Top
+    $(".btn-backtotops").hide();
+    $(window).scroll( function () {
+        let positiontop = $(this).scrollTop();
+        // console.log(positiontop);
+
+        if (positiontop >= 370) {
+            $(".btn-backtotops").fadeIn(1000);
+        } else {
+            $(".btn-backtotops").fadeOut(1000);
+        }
+    })
+    // End Back to Top
+
     // Start Header Section
     // Start nav
     $(".navbuttons").click("click",function () {
@@ -62,6 +77,16 @@ $(document).ready(function () {
             $(".adv-texts").removeClass("fromrights");
         }
     })
-    // End Adv Section 
+    // End Adv Section
+
+    // Start Footer Section
+
+    let today = new Date();
+
+    let getfullyear = today.getUTCFullYear();
+
+    $("#getyear").text(getfullyear);
+
+    // End Footer Section
 })
 // End Jquery
